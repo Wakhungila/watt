@@ -1,0 +1,23 @@
+{
+  "targets": [
+    {
+      "raw": "example.com",
+      "kind": "domain"
+    }
+  ],
+  "network": {
+    "timeout": 10.0,
+    "max_concurrency": 20,
+    "retry_attempts": 3,
+    "retry_backoff_base": 0.5
+  },
+  "workspace": {
+    "root": "watt-workspace",
+    "run_id": null
+  },
+  "logging": {
+    "level": "INFO",
+    "json_logs": false,
+    "rich": true
+  }
+}

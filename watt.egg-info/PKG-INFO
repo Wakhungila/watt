@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: watt
+Version: 0.1.0
+Summary: WATT - Web Attack & Threat Telescope. An attack-surface intelligence platform for elite bug bounty recon.
+Author-email: WATT Project <security@watt.local>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: httpx[http2]>=0.27.0
+Requires-Dist: anyio>=4.0.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: typer[all]>=0.12.0
+Requires-Dist: rich>=13.7.0
+Requires-Dist: networkx>=3.2.0
+Requires-Dist: uvloop>=0.19.0; platform_system == "Linux" or platform_system == "Darwin"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23.0; extra == "dev"
+Requires-Dist: coverage>=7.3.0; extra == "dev"
+Requires-Dist: ruff>=0.3.0; extra == "dev"
+
+WATT - Web Attack & Threat Telescope
+====================================
+
+WATT is an attack-surface intelligence platform for elite bug bounty hunters, red team operators, and advanced web application security researchers.
+
+Unlike traditional recon tools that produce flat lists, WATT builds **relationships** between assets to reveal the hidden architecture of complex systems.
+
+This repository is under active development. Phase 1 focuses on:
+
+- Core configuration and workspace management
+- Structured logging
+- Core controller and module registry
+- CLI skeleton and target ingestion
+
+See `docs/` for architecture notes as the project evolves.
+
